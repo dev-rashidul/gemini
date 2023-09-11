@@ -1,0 +1,72 @@
+.work-wrapper {
+  padding-top: 350px;
+}
+
+.work-card-img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.work-card:hover .work-card-img {
+  opacity: 0;
+}
+
+.work-card-img img {
+  max-width: 380px;
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.work-card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.work-card-content h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7e98fd;
+}
+
+/* Responsive CSS */
+
+/* Min Width 1201px and Max Width 1400px */
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .work-wrapper {
+    padding-top: 250px;
+  }
+}
+
+/* Min Width 993px and Max Width 1200px */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .work-wrapper {
+    padding-top: 180px;
+  }
+}
+
+/* Min Width 769px and Max Width 992px */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .work-wrapper {
+    padding-top: 200px;
+  }
+}
+
+/* Min Width 301px and Max Width 768px */
+
+@media (min-width: 301px) and (max-width: 768px) {
+  .work-wrapper {
+    padding-top: 100px;
+  }
+
+  .work-card-content h3 {
+    font-size: 24px;
+  }
+}

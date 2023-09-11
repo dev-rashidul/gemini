@@ -1,5 +1,8 @@
-.hero-wrapper {
-  padding-top: 20px;
+#Hero {
+  width: 100%;
+  position: relative;
+  max-width: 100vw;
+  margin-top: 20px;
 }
 
 .hero-content {
@@ -21,7 +24,7 @@
 .hero-content p {
   font-size: 18px;
   font-weight: 700;
-  line-height: 41px;
+  line-height: 28px;
   color: #fafafa;
   padding-top: 20px;
 }
@@ -43,13 +46,6 @@
   height: 100%;
 }
 
-
-#Hero{
-  width: 100%;
-  position: relative;
-  max-width: 100vw;
-}
-
 .hero-image-slider {
   position: absolute;
   max-width: 59vw;
@@ -57,9 +53,94 @@
   right: 0;
   top: 0;
 }
-.hero-image-slider img{
-  max-width: 1200px; 
-  max-height: 900px;
+
+.hero-image-slider img {
+  max-width: 1150px;
+  width: 100%;
+  min-height: 650px;
+  max-height: 750px;
   height: 100%;
-  object-fit: cover;
+}
+
+/* Responsive CSS */
+
+/* Min Width 993px and Max Width 1200px */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+}
+
+/* Min Width 769px and Max Width 992px */
+
+@media (min-width: 769px) and (max-width: 992px) {
+}
+
+/* Min Width 301px and Max Width 768px */
+
+@media (min-width: 301px) and (max-width: 768px) {
+}
+
+/* Min Width 993px and Max Width 1200px */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .hero-content h1 {
+    font-size: 125px;
+    line-height: 105px;
+  }
+
+  .hero-image-slider img {
+    min-height: 100%;
+  }
+
+  .hero-content,
+  .get-started-btn {
+    padding-top: 50px;
+  }
+}
+
+/* Min Width 769px and Max Width 992px */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 80px;
+    line-height: 70px;
+  }
+
+  .hero-image-slider img {
+    min-height: 100%;
+  }
+
+  .hero-content,
+  .get-started-btn {
+    padding-top: 20px;
+  }
+}
+
+/* Min Width 301px and Max Width 768px */
+
+@media (min-width: 301px) and (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 64px;
+    line-height: 60px;
+  }
+
+  .hero-image-slider img {
+    min-height: 100%;
+  }
+
+  .hero-content,
+  .get-started-btn {
+    padding-top: 20px;
+  }
+
+  .hero-content p,
+  .get-started-btn a {
+    font-size: 16px;
+  }
+
+  .hero-image-slider {
+    position: initial;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 50px;
+  }
 }

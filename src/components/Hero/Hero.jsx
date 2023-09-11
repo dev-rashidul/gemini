@@ -1,14 +1,16 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import slide_img1 from "../../images/hero-slide-img1.png";
 import slide_img2 from "../../images/hero-slide-img2.png";
 import slide_img3 from "../../images/hero-slide-img3.png";
+import slide_img4 from "../../images/hero-slide-img4.png";
+import slide_img5 from "../../images/hero-slide-img5.png";
 import "../Hero/Hero.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
-const slider = [slide_img1, slide_img2, slide_img3];
+const slider = [slide_img1, slide_img2, slide_img3, slide_img4, slide_img5];
 
 // slider docs
 // https://react-slick.neostack.com/docs/api
@@ -42,16 +44,17 @@ const Hero = () => {
                 </div>
               </div>
             </Col>
+            <Col md={6}>
+              <div className="hero-image-slider">
+                <Slider {...settings}>
+                  {slider.map((img, i) => (
+                    <Image key={i} src={img}></Image>
+                  ))}
+                </Slider>
+              </div>
+            </Col>
           </Row>
         </Container>
-      </div>
-
-      <div className="hero-image-slider">
-        <Slider {...settings}>
-          {slider.map((img, i) => (
-            <img key={i} src={img} />
-          ))}
-        </Slider>
       </div>
     </section>
   );

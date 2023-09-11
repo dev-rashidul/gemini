@@ -1,0 +1,128 @@
+.features-container {
+  padding-top: 200px;
+}
+
+.features-content {
+  max-width: 425px;
+  max-height: 750px;
+  height: 100%;
+}
+
+.features-content h6 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  color: #fafafa;
+  margin: 0;
+}
+
+.features-content h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+  padding-top: 80px;
+  margin: 0;
+}
+
+.features-content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fafafa;
+  padding-top: 20px;
+}
+
+.learn-more-btn {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+}
+
+.features-content-right .learn-more-btn {
+  right: 0;
+}
+
+.learn-more-btn a {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 30px;
+  color: #93f82f;
+  border: 2px solid #93f82f;
+  border-radius: 100px;
+}
+
+.features-img img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 750px;
+  height: 100%;
+}
+
+.pen-icon {
+  position: absolute;
+  left: -220px;
+  bottom: -120px;
+}
+
+.pen-icon img {
+  max-width: 90%;
+}
+
+/* Responsive CSS */
+
+/* Min Width 993px and Max Width 1200px */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .features-content h2 {
+    font-size: 40px;
+  }
+
+  .pen-icon {
+    left: -150px;
+    bottom: -80px;
+  }
+
+  .pen-icon img {
+    max-width: 80%;
+  }
+}
+
+/* Min Width 769px and Max Width 992px */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .features-content h2 {
+    font-size: 40px;
+    padding-top: 30px;
+  }
+
+  .pen-icon {
+    display: none;
+  }
+
+  .learn-more-btn {
+    bottom: 0;
+  }
+}
+
+/* Min Width 301px and Max Width 768px */
+
+@media (min-width: 301px) and (max-width: 768px) {
+  .features-container {
+    padding-top: 80px;
+  }
+
+  .features-content h2 {
+    font-size: 36px;
+    padding-top: 50px;
+  }
+
+  .pen-icon {
+    display: none;
+  }
+
+  .learn-more-btn {
+    position: initial;
+    padding-top: 50px;
+  }
+}
