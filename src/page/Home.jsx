@@ -7,13 +7,13 @@ const Home = () => {
     <>
       {/* Header Section JSX Start */}
 
-      <Header></Header>
+      <Header />
 
       {/* Header Section JSX End */}
 
       {/* Hero Section JSX Start */}
 
-      <Hero></Hero>
+      <Hero />
 
       {/* Hero Section JSX End */}
     </>
