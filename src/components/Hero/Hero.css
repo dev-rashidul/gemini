@@ -1,0 +1,50 @@
+.hero-wrapper {
+  padding-top: 20px;
+}
+
+.hero-content {
+  padding-top: 80px;
+}
+
+.hero-content h1 {
+  font-size: 160px;
+  font-weight: 800;
+  line-height: 132px;
+  color: #fafafa;
+}
+
+.hero-image-slider {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 41px;
+  color: #fafafa;
+  padding-top: 20px;
+}
+
+.get-started-btn {
+  padding-top: 100px;
+}
+
+.get-started-btn a {
+  font-size: 18px;
+  text-decoration-line: underline;
+  color: #93f82f;
+}
+
+.hero-slide img {
+  max-width: 1120px;
+  width: 100%;
+  max-height: 750px;
+  height: 100%;
+}
