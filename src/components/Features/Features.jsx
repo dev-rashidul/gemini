@@ -18,7 +18,7 @@ const Features = () => {
                   Envision your environment together. Our mobile interface
                   encourages collaborating with others in real time.
                 </p>
-                <div className="learn-more-btn">
+                <div className="learn-more-btn common-btn">
                   <a href="/">Learn More</a>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const Features = () => {
                   Visualize entire collections in physical space with the
                   endless optionality of the digital world.
                 </p>
-                <div className="learn-more-btn">
+                <div className="learn-more-btn common-btn">
                   <a href="/">Learn More</a>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const Features = () => {
                   integration of textile and tech that integrates with the
                   environment around you.
                 </p>
-                <div className="learn-more-btn">
+                <div className="learn-more-btn common-btn">
                   <a href="/">Learn More</a>
                 </div>
               </div>

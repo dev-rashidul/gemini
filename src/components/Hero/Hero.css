@@ -62,23 +62,6 @@
   height: 100%;
 }
 
-/* Responsive CSS */
-
-/* Min Width 993px and Max Width 1200px */
-
-@media (min-width: 993px) and (max-width: 1200px) {
-}
-
-/* Min Width 769px and Max Width 992px */
-
-@media (min-width: 769px) and (max-width: 992px) {
-}
-
-/* Min Width 301px and Max Width 768px */
-
-@media (min-width: 301px) and (max-width: 768px) {
-}
-
 /* Min Width 993px and Max Width 1200px */
 
 @media (min-width: 993px) and (max-width: 1200px) {

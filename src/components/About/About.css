@@ -1,0 +1,127 @@
+.about-wrapper {
+  padding-top: 150px;
+}
+
+.about-content {
+  padding-right: 80px;
+}
+
+.about-content span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+.about-content h2,
+.request-demo h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fafafa;
+}
+
+.about-content p,
+.request-demo p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fafafa;
+}
+
+.about-us-btn {
+  padding-top: 60px;
+}
+
+.request-demo-form {
+  padding-top: 35px;
+}
+
+.demo-input-field {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  padding: 12px 18px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+}
+
+.demo-input-field input {
+  width: 90%;
+  border: none;
+}
+
+.demo-input-field button {
+  width: 10%;
+  border: none;
+}
+
+.demo-input-field input:focus {
+  outline: 0;
+}
+
+.demo-check-field {
+  padding-top: 15px;
+}
+
+.demo-check-field label {
+  font-size: 16px;
+  padding-left: 12px;
+  color: #fafafa;
+}
+
+.social-media {
+  padding-top: 50px;
+}
+
+.social-media ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media ul li {
+  list-style: none;
+  padding-right: 20px;
+}
+
+.request-demo-form ::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  color: #919498;
+}
+
+/* Responsive CSS */
+
+/* Min Width 769px and Max Width 992px */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .about-content h2,
+  .request-demo h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+/* Min Width 301px and Max Width 768px */
+
+@media (min-width: 301px) and (max-width: 768px) {
+  .about-wrapper {
+    padding-top: 100px;
+  }
+
+  .about-content h2,
+  .request-demo h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .request-demo {
+    padding-top: 70px;
+  }
+
+  .demo-input-field {
+    padding-right: 30px;
+  }
+}

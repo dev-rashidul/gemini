@@ -1,0 +1,70 @@
+.platform-wrapper {
+  padding-top: 150px;
+}
+
+.platform-content > span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+.platform-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: 0.1px;
+  color: #fafafa;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.platform-content h2 span {
+  color: #93f82f;
+}
+
+.platform-content p {
+  max-width: 550px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fafafa;
+  margin-bottom: 0;
+}
+
+/* Responsive CSS */
+
+/* Min Width 993px and Max Width 1200px */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .platform-content h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+/* Min Width 769px and Max Width 992px */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .platform-content h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+/* Min Width 301px and Max Width 768px */
+
+@media (min-width: 301px) and (max-width: 768px) {
+  .platform-wrapper {
+    padding-top: 100px;
+  }
+
+  .platform-content h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .platform-btn {
+    padding-top: 50px;
+  }
+}
