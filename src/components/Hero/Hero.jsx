@@ -4,13 +4,24 @@ import slide_img1 from "../../images/hero-slide-img1.png";
 import slide_img2 from "../../images/hero-slide-img2.png";
 import slide_img3 from "../../images/hero-slide-img3.png";
 import "../Hero/Hero.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
-const slider = {
-  items: [
-    <Image className="img-fluid" src={slide_img1}></Image>,
-    <Image className="img-fluid" src={slide_img2}></Image>,
-    <Image className="img-fluid" src={slide_img3}></Image>,
-  ],
+const slider = [slide_img1, slide_img2, slide_img3];
+
+// slider docs
+// https://react-slick.neostack.com/docs/api
+const settings = {
+  dots: false,
+  infinite: true,
+  arrows: false,
+  autoplay: true,
+  autoPlaySpeed: 1000,
+  speed: 600,
+  pauseOnHover: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
 };
 
 const Hero = () => {
@@ -31,15 +42,16 @@ const Hero = () => {
                 </div>
               </div>
             </Col>
-            <Col md={6}>
-              <div className="hero-image-slider">
-                <div className="hero-slide">
-                  <Image className="img-fluid" src={slide_img1}></Image>
-                </div>
-              </div>
-            </Col>
           </Row>
         </Container>
+      </div>
+
+      <div className="hero-image-slider">
+        <Slider {...settings}>
+          {slider.map((img, i) => (
+            <img key={i} src={img} />
+          ))}
+        </Slider>
       </div>
     </section>
   );
